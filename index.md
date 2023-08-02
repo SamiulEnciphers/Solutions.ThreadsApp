@@ -18,7 +18,7 @@
   * [Server-Side Request Forgery](#SSRF)
   * [Stored-XSS](#Stored-XSS)
   * [Stored-XSS](#Self-XSS)
-  * [Account takeover via IDOR](#IDORt)
+  * [Lack of Authorization leads to Account Takeover](#IDORt)
   * [Blind SSRF](#bssrf)
   * [Chaining of IDOR with XSS](#ccix)
 - [4. Critical Severities](#Critical)
@@ -289,7 +289,7 @@ python3 dirsearch.py -u http://localhost:3000 -e html,php
 4. Another execution end point : When you visit the same user profile from another user given script executes
 ![XSS](/images/self4.png)
 
-## Account Takeover via IDOR <a name="IDORt"></a>
+## Lack of Authorization leads to Account Takeover <a name="IDORt"></a>
 
 1. Create two Accounts for eg. nodie and nodiea
 ![IDOR](/images/idort1.png)
